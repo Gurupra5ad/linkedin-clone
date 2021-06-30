@@ -13,7 +13,7 @@ function Sidebar() {
     return (
         <div className="sidebar">
             <div className="sidebar__top">
-                <img src="https://wallpaperaccess.com/full/935053.jpg" alt="" />
+                <img src="https://www.teahub.io/photos/full/211-2115123_abstract-geometric-wallpaper-background-shapes-shapes-and-colors.jpg" alt="" />
                 <Avatar className="sidebar__avatar"/>
                 <h2>Guru Prasad</h2>
                 <h4>guruprasad2511@gmail.com</h4>
