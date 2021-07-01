@@ -29,7 +29,7 @@ function Login() {
                     email:userAuth.email,
                     uid:userAuth.user.id,
                     displayName: name,
-                    photoUrl:profile
+                    photoURL:profile
                 }));
             });
         }).catch(error => alert(error));
@@ -41,10 +41,10 @@ function Login() {
         auth.signInWithEmailAndPassword(email, password)
         .then(userAuth => {
             dispatch(login({
-                email:userAuth.email,
+                email:userAuth.user.email,
                 uid:userAuth.user.uid,
                 name:userAuth.user.displayName,
-                photoUrl:userAuth.user.profileURL
+                photoUrl:userAuth.user.photoURL
             }));
         })
         .catch((error) => alert(error));

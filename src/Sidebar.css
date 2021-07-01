@@ -1,10 +1,11 @@
 .sidebar{
     position:sticky;
     top:80px;
-    flex:0.2;
+    flex-grow:0.2;
     border-radius:10px;
     text-align:center;
     height:fit-content;
+    width:300px;
 }
 
 .sidebar__avatar{
