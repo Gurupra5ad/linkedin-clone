@@ -37,6 +37,17 @@ function Login() {
 
     const loginToApp = (e) => {
         e.preventDefault();
+
+        auth.signInWithEmailAndPassword(email, password)
+        .then(userAuth => {
+            dispatch(login({
+                email:userAuth.email,
+                uid:userAuth.user.uid,
+                name:userAuth.user.displayName,
+                photoUrl:userAuth.user.profileURL
+            }));
+        })
+        .catch((error) => alert(error));
     };
 
     return (

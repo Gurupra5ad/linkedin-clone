@@ -8,12 +8,12 @@ import  SupervisorAccountIcon from '@material-ui/icons/SupervisorAccount';
 import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 import ChatIcon from '@material-ui/icons/Chat';
 import NotificationsIcon from '@material-ui/icons/Notifications';
-import { logout } from './features/userSlice';
+import { logout} from './features/userSlice';
 import {auth} from './firebase';
 
 function Header() {
     const dispatch = useDispatch();
-
+    
     const logOutOfApp = () => {
         dispatch(logout());
         auth.signOut();
@@ -35,8 +35,8 @@ function Header() {
                 <HeaderOption Icon={ChatIcon} title="Messaging" />
                 <HeaderOption Icon={NotificationsIcon} title="Notifications" />
                 <HeaderOption 
-                    avatar="http://gurupra5ad.herokuapp.com/static/img/mobile.jpg" 
-                    title="Me" 
+                    avatar= {true}
+                    title="Me"
                     onClick ={logOutOfApp}
                 />
 
